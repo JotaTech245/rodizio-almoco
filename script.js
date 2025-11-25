@@ -1,12 +1,12 @@
 let somLiberado = false;
 
-// Colaboradores
+
 const colaboradores = [
     { nome: "Francisco", hora: "12:00", avisado: false },
     { nome: "Samuel", hora: "13:05", avisado: false },
     { nome: "Alberto", hora: "14:10", avisado: false }
 ];
-// Preenche tabela
+
 function carregarTabela() {
     const tabela = document.getElementById("tabela-colaboradores");
 
@@ -20,7 +20,7 @@ function carregarTabela() {
     });
 }
 
-// Função de fala
+
 function falar(texto) {
     if (!somLiberado) return;
 
@@ -29,7 +29,7 @@ function falar(texto) {
     speechSynthesis.speak(msg);
 }
 
-// Destaque na tabela
+
 function marcarLinha(nome) {
     document.querySelectorAll("#tabela-colaboradores tr").forEach(linha => {
         if (linha.children[0].textContent === nome) {
@@ -51,7 +51,7 @@ function avisarDuasVezes(nome, hora) {
     }, 10000);
 }
 
-// Verifica horário
+
 function verificarHorarios() {
     const agora = new Date();
     const horaAtual = agora.toTimeString().slice(0, 5);
@@ -67,7 +67,7 @@ function verificarHorarios() {
     });
 }
 
-// Botão libera som
+
 document.getElementById("ativarSom").addEventListener("click", () => {
     somLiberado = true;
     speechSynthesis.resume();
@@ -77,4 +77,5 @@ document.getElementById("ativarSom").addEventListener("click", () => {
 
 carregarTabela();
 setInterval(verificarHorarios, 1000);
+
 
