@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background: #f2f4f7;
+    color: #333;
+    padding: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+
+.sub {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-size: 16px;
+    padding: 10px 0;
+    color: #666;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 14px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.aviso {
+    background: #d1ffd1 !important;
+    transition: background 0.4s ease;
+}
+
+/* Botão topo */
+.top-bar {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.btn-ativar {
+    padding: 12px 18px;
+    background: #4b7bec;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-ativar:hover {
+    background: #3867d6;
+}
