@@ -42,10 +42,10 @@ function marcarLinha(nome) {
 function avisarDuasVezes(nome, hora) {
     const mensagem = `${nome}, deu ${hora}, está na hora do seu almoço!`;
 
-    // 1ª vez (agora)
+
     falar(mensagem);
 
-    // 2ª vez após 10 segundos
+   
     setTimeout(() => {
         falar(mensagem);
     }, 10000);
@@ -77,3 +77,4 @@ document.getElementById("ativarSom").addEventListener("click", () => {
 
 carregarTabela();
 setInterval(verificarHorarios, 1000);
+
