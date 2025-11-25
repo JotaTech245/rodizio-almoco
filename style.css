@@ -64,7 +64,7 @@ tr:last-child td {
     transition: background 0.4s ease;
 }
 
-/* Botão topo */
+
 .top-bar {
     text-align: center;
     margin-bottom: 25px;
@@ -84,3 +84,4 @@ tr:last-child td {
 .btn-ativar:hover {
     background: #3867d6;
 }
+
